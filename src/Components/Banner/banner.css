@@ -1,0 +1,210 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Banner {
+    width: 100%;
+}
+.Banner .BannerSlider {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid grey;
+}
+.BannerSlider .ContentinsideBannerslider{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.ContentinsideBannerslider h1{
+    color: red;
+    font-size: 70px;
+}
+.ContentinsideBannerslider .BoxInside{
+    height: 200px;
+    width: 500px;
+}
+.BoxInside .BannerBox{
+    height: 140px;
+    width: 500px;
+}
+.BoxInside .BannerButtons{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.BannerButtons .BannerButton{
+    height: 60px;
+    width: 240px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: 5px solid antiquewhite;
+    border-color: antiquewhite;
+    font-size: 15px;
+}
+.BannerSlider .BannerGif{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.BannerGif img{
+    height: 50%;
+    width: 50%;
+}
+.Banner .BannerContents {
+    padding: 20px;
+}
+.BannerContents .BannerContentsbox1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.BannerContentsbox1 .Box {
+    height: 350px;
+    width: 100%;
+    max-width: 300px;
+    border-bottom: 2px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Box .Image {
+    height: 200px;
+    width: 100%;
+    background-color: aqua;
+}
+
+.Image .Img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Box .ImageDetails {
+    padding: 10px;
+    
+}
+
+.Banner .BannerContentsbox2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.BannerContentsbox2 .BoxinsideBannercontentsbox2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
+    border-bottom: 2px solid grey;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.ContentBox1 {
+    flex: 1;
+    min-width: 300px;
+    border-right: 2px solid grey;
+    padding: 20px;
+}
+.ContentBox2{
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.Banner .FirstcardSection {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 10px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.FirstcardSection::-webkit-scrollbar {
+    display: none;
+}
+.FirstcardSection .Cards{
+    height: 500px;
+    width: 300px;
+}
+.Cards .CardImage{
+    height: 350px;
+    width: 300px;
+    background-color: aquamarine;
+}
+.Cards .Img{
+    height: 100%;
+    width: 100%;
+}
+.Cards .CardDetails{
+    height: 150px;
+    width: 300px;
+    background-color: antiquewhite;
+}
+.CardDetails .Details{
+    height: 100px;
+    width: 300px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.CardDetails .Buttons{
+    height: 50px;
+    width: 300px;
+}
+.Buttons button{
+    height: 50px;
+    width: 150px;
+    border: 2px solid antiquewhite;
+    background-color: white;
+    color: black;
+}
+@media (max-width: 768px) {
+    .Banner .BannerSlider {
+        height: 40vh;
+    }
+
+    .BannerContents .BannerContentsbox1,
+    .BannerContentsbox2 .BoxinsideBannercontentsbox2 {
+        flex-direction: column;
+    }
+
+    .ContentBox1, .ContentBox2 {
+        border-right: none;
+        border-bottom: 2px solid grey;
+        width: 100%;
+    }
+    .FirstcardSection {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Banner .BannerSlider .arrow {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .Buttons button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Header {
+    height: 140px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header .HeaderPart1 {
+    width: 100%;
+    text-align: center;
+}
+
+.Header .HeaderPart1 h1 {
+    font-size: 4vw; /* Responsive font size */
+    margin: 0;
+}
+
+.Header .HeaderPart2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.HeaderPart2 .Boxnum1 {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.HeaderPart2 .Boxnum1 .BoxinsideBoxnum1,
+.HeaderPart2 .Boxnum1 .BoxinsideBoxnum2 {
+    height: 50%;
+    width: 100%;
+    border-bottom: 2px solid grey;
+}
+
+.HeaderPart2 .Boxnum2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.HeaderPart2 .Boxnum2 .HeaderOption {
+    position: relative;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.HeaderPart2 .Boxnum2 .HeaderOption::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; 
+    height: 3px; 
+    background-color: rgb(54, 52, 52); 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+}
+
+.HeaderPart2 .Boxnum2 .HeaderOption:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .Header {
+        height: auto;
+    }
+
+    .Header .HeaderPart1 h1 {
+        font-size: 6vw; /* Larger font size for smaller screens */
+    }
+
+    .Header .HeaderPart2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .HeaderPart2 .Boxnum1 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .HeaderPart2 .Boxnum2 {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .HeaderPart2 .Boxnum2 .HeaderOption {
+        font-size: 1.2em;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Header .HeaderPart1 h1 {
+        font-size: 8vw;
+    }
+
+    .HeaderPart2 .Boxnum2 .HeaderOption {
+        font-size: 1em;
+        margin: 5px;
+    }
+}

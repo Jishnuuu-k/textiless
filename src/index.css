@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: 'CustomFont';
+  src: url('./Assets/Fonts/Fonts/DreamCottage-Regular.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.BannerSlider {
+  font-family: 'CustomFont', sans-serif;
+}
+.HeaderPart1 h1{
+  font-family: 'CustomFont';
+}
