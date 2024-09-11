@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import './banner.css';
-
+import { TbBrandWhatsapp } from "react-icons/tb";
+import { FaCartArrowDown } from "react-icons/fa";
+function Click(){
+    console.log("Clicked")
+}
 function Banner() {
     return (
         <div className="Banner">
@@ -12,11 +16,11 @@ function Banner() {
                             <h3>From loom to luxury</h3>
                         </div>
                         <div className="BannerButtons">
-                            <a href="">
-                            <button className="BannerButton">Chat With Us</button>
+                            <a href="https://wa.me/+917902286179"> 
+                            <button className="BannerButton" onClick={Click}>Chat With Us <TbBrandWhatsapp className='Icon'/></button>
                             </a>
                             <a href="">
-                            <button className="BannerButton">Go To Cart</button>
+                            <button className="BannerButton" onClick={Click}>Go To Cart <FaCartArrowDown className='Icon'/></button>
                             </a>
                         </div>
                     </div>
