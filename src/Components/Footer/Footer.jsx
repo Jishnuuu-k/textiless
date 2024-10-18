@@ -12,7 +12,7 @@ function Footer() {
           </p>
         </div>
         <div className="FooterLinks">
-          <h3>TEXTILE.PRO</h3>
+          <h3>LAVENDER</h3>
           <ul>
             <li><a href="/home">Home</a></li>
             <li><a href="/products">Products</a></li>
@@ -47,7 +47,7 @@ function Footer() {
         </div>
       </div>
       <div className="FooterBottom">
-        <p>&copy; 2024 Textile.Pro Company. All rights reserved.</p>
+        <p>&copy; 2024 Lavender Company. All rights reserved.</p>
       </div>
     </div>
   );

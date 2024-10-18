@@ -1,27 +1,24 @@
 import React from 'react'
 import './header.css'
+import { Link } from 'react-router-dom'
+
 function Header() {
   return (
-    <div className='Header'>
-        <div className="HeaderPart1">
-            <h1>TEXTILE.PRO</h1>
-        </div>
-        <div className="HeaderPart2">
-           <div className="Boxnum1">
-                <div className="BoxinsideBoxnum1"></div>
-                <div className="BoxinsideBoxnum2"></div>
-           </div>
-           <div className="Boxnum2">
-                <div className="HeaderOption">Home</div>
-                <div className="HeaderOption">About Us</div>
-                <div className="HeaderOption">Products</div>
-                <div className="HeaderOption">Contact Us</div>
-           </div>
-           <div className="Boxnum1">
-                <div className="BoxinsideBoxnum1"></div>
-                <div className="BoxinsideBoxnum2"></div>
-           </div>
-        </div>
+    <div className='NavBar'>
+      <div className="NavLogo">
+        <h4>Lavender</h4>
+      </div>
+      <div className="NavOptions">
+          <Link to="/" style={{textDecoration:'none'}}>
+                 <div className="Options">Home</div>
+          </Link>
+          <Link to="about" style={{textDecoration:'none'}}>
+                 <div className="Options">About Us</div>
+          </Link>
+       
+        <div className="Options">Products</div>
+        <div className="Options">Contact Us</div>
+      </div>
     </div>
   )
 }

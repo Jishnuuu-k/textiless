@@ -17,9 +17,22 @@ code {
   font-weight: normal;
   font-style: normal;
 }
+.NavLogo h4{
+  font-family: 'CustomFont';
+}
 .BannerSlider {
   font-family: 'CustomFont', sans-serif;
 }
 .HeaderPart1 h1{
   font-family: 'CustomFont';
+}
+.SectionHeading{
+  font-family: 'CustomFont';
+}
+.Box .ImageDetails h3{
+  font-family: 'CustomFont';
+}
+.ContentHeading{
+  font-family: 'CustomFont';
+  color: #b355e6;
 }

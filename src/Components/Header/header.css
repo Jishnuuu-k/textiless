@@ -1,119 +1,84 @@
-* {
-    margin: 0;
-    padding: 0;
+.NavBar{
+  height: 80px;
+  width: 100%;
+  background-color:  rgb(81, 27, 117);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-
-.Header {
-    height: 140px;
+.NavLogo{
+  height: 80px;
+  width: 40%;
+}
+.NavLogo h4{
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 25px;
+  color: white;
+}
+.NavOptions{
+  height: 80px;
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.Options{
+  height: 40px;
+  width: 130px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+.Options:hover{
+  color: rgb(81, 27, 117);
+  background-color: violet;
+  transition: 0.5s;
+}
+@media (max-width: 768px) {
+  .NavBar{
+    height: 50px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.Header .HeaderPart1 {
-    width: 100%;
-    text-align: center;
-}
-
-.Header .HeaderPart1 h1 {
-    font-size: 4vw; /* Responsive font size */
-    margin: 0;
-}
-
-.Header .HeaderPart2 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-}
-
-.HeaderPart2 .Boxnum1 {
-    width: 20%;
-    display: flex;
-    justify-content: center;
-}
-
-.HeaderPart2 .Boxnum1 .BoxinsideBoxnum1,
-.HeaderPart2 .Boxnum1 .BoxinsideBoxnum2 {
-    height: 50%;
-    width: 100%;
-    border-bottom: 2px solid grey;
-}
-
-.HeaderPart2 .Boxnum2 {
+    background-color:  rgb(81, 27, 117);
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
-}
-
-.HeaderPart2 .Boxnum2 .HeaderOption {
-    position: relative;
-    padding: 10px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.HeaderPart2 .Boxnum2 .HeaderOption::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px; 
-    height: 3px; 
-    background-color: rgb(54, 52, 52); 
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-}
-
-.HeaderPart2 .Boxnum2 .HeaderOption:hover::after {
-    transform: scaleX(1);
-    transform-origin: left;
-}
-
-/* Media queries for responsiveness */
-@media (max-width: 768px) {
-    .Header {
-        height: auto;
-    }
-
-    .Header .HeaderPart1 h1 {
-        font-size: 6vw; /* Larger font size for smaller screens */
-    }
-
-    .Header .HeaderPart2 {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .HeaderPart2 .Boxnum1 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .HeaderPart2 .Boxnum2 {
-        width: 100%;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .HeaderPart2 .Boxnum2 .HeaderOption {
-        font-size: 1.2em;
-        margin: 5px;
-    }
-}
-
-@media (max-width: 480px) {
-    .Header .HeaderPart1 h1 {
-        font-size: 8vw;
-    }
-
-    .HeaderPart2 .Boxnum2 .HeaderOption {
-        font-size: 1em;
-        margin: 5px;
-    }
+  }
+  .NavLogo{
+    height: 50px;
+    width: 30%;
+  }
+  .NavLogo h4{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+    color: white;
+  }
+  .NavOptions{
+    height: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .Options{
+    height: 30px;
+    width: 130px;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .Options:hover{
+    height: 30px;
+    width: 130px;
+    color: rgb(81, 27, 117);
+    background-color: violet;
+    transition: 0.5s;
+  }
 }
